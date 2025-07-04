@@ -6,7 +6,7 @@ export default (): HvAppShellConfig => ({
   baseUrl: "/",
   menu: [
     { label: "example", target: "/Example" },
-    { label: "tab2", target: "/Tav2" }
+    { label: "tab2", target: "/Tab2" }
   ],
   mainPanel: {
     maxWidth: "xl"  

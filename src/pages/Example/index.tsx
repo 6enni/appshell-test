@@ -16,8 +16,10 @@ const Example = () => {
 
   return (
     <HvGrid container>
-      <HvGrid item xs={12}>
-        <HvTypography variant="title2">{t("page.title")}{userId}-{orgId}</HvTypography>
+       <HvGrid item >{t("page.title")}</HvGrid>
+      <HvGrid item container flexDirection={"column"} xs={12}>
+         <HvGrid item >{'UserId - ' + userId}</HvGrid>
+         <HvGrid item >{'OrgId - ' + orgId}</HvGrid>
       </HvGrid>
       <HvGrid item xs={12}>
         <HvGlobalActions title={t("section.title")} variant="section" />

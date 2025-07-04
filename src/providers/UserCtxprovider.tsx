@@ -41,7 +41,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
         setUserId('user-' + rand);
         setOrgId('org-' + rand);
         setUsername("testuser");
-    }, (1000*60)); // Simulate an API call delay
+    }, (1000*5)); // Simulate an API call delay
   }, []);
 
   const value = useMemo(
